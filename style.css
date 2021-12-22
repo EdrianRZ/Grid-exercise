@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.nav-bar {
+  box-sizing: border-box;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  height: 5vh;
+}
+.nav-bar2 {
+  box-sizing: border-box;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.nav-list {
+  text-align: right;
+  list-style: none;
+  font-size: 25px;
+}
+.header {
+  text-align: left;
+}
+.footer {
+  /* text-align: center; */
+  display: block;
+  height: 5vh;
+}
+
+.list-item {
+  display: inline-flex;
+  list-style: none;
+}
+.usernamepassword {
+  display: inline-block;
+  font-size: 20px;
+  border: 0.5px solid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 30vw;
+  height: 15vh;
+  border-radius: 10px;
+  line-height: 90%;
+}
+input {
+  padding: 10px;
+}
+.form {
+  text-align: center;
+  align-items: center;
+}
+.item {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 200px;
+  overflow: hidden;
+}
+.item1 {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 200px;
+  overflow: hidden;
+}
+.paragraph {
+  font-size: 15px;
+}
+
+.grid-boxes {
+  width: 100%;
+  background-image: url(pic1.jpg);
+  border-radius: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background-image: url(pic1.jpg);
+  border: 0.5px solid;
+  grid-gap: 10px;
+  font-size: 25px;
+}
+.column1 {
+  margin: auto 0;
+  height: 85%;
+}
+.column2 {
+  padding: 10px;
+  margin: auto 0;
+}
+.columnlayout {
+  display: grid;
+  grid-template-columns: 1fr 3fr auto auto;
+  height: 90vh;
+  margin: auto 0;
+}
+@media screen and (max-width: 780px) {
+  .columnlayout {
+    display: block;
+    height: auto;
+  }
+}
+.column1 {
+  margin-bottom: 20px;
+}
+.usernamepassword {
+  height: auto;
+  padding: 20px;
+}
